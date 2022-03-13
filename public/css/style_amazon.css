@@ -1,0 +1,78 @@
+/* Recipe Card */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_menu {
+  background-color: #b1a28f;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar {
+  background-color: #b1a28f;
+  z-index: 10;
+}
+
+#container {
+  /*margin: 100px; */
+  font-family: cursive;
+  position: relative;
+  top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+  column-gap: 80px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  background-image: url(../photos/amazon_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.card {
+  height: 364px;
+  padding: 10 10;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  margin-left: 40px;
+}
+
+.card-title {
+  margin-top: 10px;
+}
+
+.bottomcard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buyBtn {
+  padding: 1 12 9 12;
+  height: 42;
+  font-size: x-large;
+  margin-top: 4px;
+}
+
+.buy {
+  height: 30;
+  width: 63;
+  padding-top: 0;
+}
+
+#price {
+  font-weight: 600;
+  font-size: xx-large;
+}

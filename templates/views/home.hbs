@@ -1,0 +1,203 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style_homepage.css" />
+    <link rel="stylesheet" href="css/chat.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>MyFridge</title>
+  </head>
+  <body>
+
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i
+          id="chat-icon"
+          style="color: #fff;"
+          class="fa fa-fw fa-comments-o"
+        ></i>
+      </button>
+
+      <div class="content">
+        <div class="full-chat-block">
+          <!-- Message Container -->
+          <div class="outer-container">
+            <div class="chat-container">
+              <!-- Messages -->
+              <div id="chatbox">
+                <h5 id="chat-timestamp"></h5>
+                <p id="botStarterMessage" class="botText"><span
+                  >Loading...</span></p>
+              </div>
+
+              <!-- User input box -->
+              <div class="chat-bar-input-block">
+                <div id="userInput">
+                  <input
+                    id="textInput"
+                    class="input-box"
+                    type="text"
+                    name="msg"
+                    placeholder="Tap 'Enter' to send a message"
+                  />
+                  <p></p>
+                </div>
+
+                <div class="chat-bar-icons">
+                  <i
+                    id="chat-icon"
+                    style="color: crimson;"
+                    class="fa fa-fw fa-heart"
+                    onclick="heartButton()"
+                  ></i>
+                  <i
+                    id="chat-icon"
+                    style="color: #333;"
+                    class="fa fa-fw fa-send"
+                    onclick="sendButton()"
+                  ></i>
+                </div>
+              </div>
+
+              <div id="chat-bar-bottom">
+                <p></p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    {{>navbar}}
+    {{! <div class="container-fluid main_menu">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <nav class="navbar navbar-expand-lg">
+            <img
+              src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-smart-refrigerator-internet-technology-vitaliy-gorbachev-fill-vitaly-gorbachev.png"
+            />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">
+                    <header
+                      style="font-size: 23px; color: black; border-bottom: 1px solid black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Home
+                    </header>
+                    <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/edit_items">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Edit Items
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/expired_items">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Expired Items
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/recipe_search">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Recipe Recommendation
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about_us.html">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Products
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about_us.html">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Recipes
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about_us">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      About Us
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/logout">
+                    <header
+                      style="font-size: 23px; color: black; padding-left: 5px;"
+                    >
+                      Logout
+                    </header>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div> }}
+
+    <section class="showcase">
+      <video src="videos/bg2.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="title1">
+        My
+      </div>
+      <div class="title2">
+        Fridge
+      </div>
+
+      <div class="text1">
+        <p>Keep track of all food items in your fridge.</p>
+      </div>
+
+    </section>
+  </body>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+  ></script>
+  <script type="text/javascript" src="/script/chat.js"></script>
+  <script type="text/javascript" src="/script/responses.js"></script>
+    <script type="text/javascript" src="/script/home.js"></script>
+</html>

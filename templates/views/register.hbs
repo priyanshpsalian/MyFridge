@@ -1,0 +1,301 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <title>MyFridge</title>
+  </head>
+  <body>
+    <div class="container-fluid main_menu">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <nav class="navbar navbar-expand-lg">
+            <img
+              src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-smart-refrigerator-internet-technology-vitaliy-gorbachev-fill-vitaly-gorbachev.png"
+            />
+            <header
+              style="font-family: serif; font-size: 35px; color: #5a004b;"
+            >
+              My
+            </header>
+            <header style="font-family: serif; font-size: 35px; color: black;">
+              Fridge
+            </header>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/index">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Home
+                    </header>
+                    <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Login
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">
+                    <header
+                      style="font-size: 23px; color: black; border-bottom: 1px solid black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Sign-Up
+                    </header>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="showcase">
+      <img src="photos/signupbh5.jpg" width="100%" />
+      <div class="image">
+        <img src="photos/signupbg8.jpg" />
+        <div class="text">
+          <p>Register Now! and Join us to reduce food wastage.</p>
+        </div>
+      </div>
+      <div class="bg"></div>
+      <div class="form">
+        <form action="/register" method="post">
+          <label
+            style="position: absolute; color : black; font-family: 'Tangerine', serif; font-size: 50px; left: 280px;"
+          >Sign-Up</label>
+          <div class="container">
+            <label
+              style="font-size: 20px; color: black; position: absolute; top: 100px; left: 40px;"
+            >First Name:</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              required
+              style="position: absolute; width: 160px; top: 100px; left: 150px; border: none; border-bottom: 1px solid black; background-color: transparent ; color: black;"
+            />
+
+            <label
+              style="font-size: 20px; color: black; position: absolute; top: 100px; left: 360px;"
+            >Last Name:</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              required
+              style="position: absolute; width: 160px; top: 100px; left: 470px; border: none; border-bottom: 1px solid black; background-color: transparent ; color: black;"
+            />
+
+            <label
+              style="font-size: 20px; color: black; position: absolute; top: 180px; left: 40px;"
+            >Email-Id:</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              required
+              style="position: absolute; width: 160px; top: 180px; left: 130px; border: none; border-bottom: 1px solid black; background-color: transparent ; color: black;"
+            />
+
+            <label
+              style="font-size: 20px; color: black; position: absolute; top: 180px; left: 320px;"
+            >Contact Number:</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              required
+              style="position: absolute; width: 160px; top: 180px; left: 480px; border: none; border-bottom: 1px solid black; background-color: transparent ; color: black;"
+            />
+
+            <label
+              style="font-size: 20px; color: black; position: absolute; top: 260px; left: 40px;"
+            >Age:</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              required
+              style="position: absolute; width: 160px; top: 260px; left: 90px; border: none; border-bottom: 1px solid black; background-color: transparent ; color: black;"
+            />
+
+            <label
+              for="gender"
+              style="font-size: 20px; color: black; position: absolute; top: 260px; left: 290px;"
+            >Gender:</label>
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              style="position: absolute; top: 268px; left: 375px;"
+            />
+            <label
+              style="font-size: 20px; color: black; font-weight: 300; position: absolute; top: 260px; left: 395px;"
+            >Male</label>
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              style="position: absolute; top: 268px; left: 450px;"
+            />
+            <label
+              style="font-size: 20px; color: black; font-weight: 300; position: absolute; top: 260px; left: 470px;"
+            >Female</label>
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              style="position: absolute; top: 268px; left: 545px;"
+            />
+            <label
+              style="font-size: 20px; color: black; font-weight: 300; position: absolute; top: 260px; left: 565px;"
+            >Other</label>
+
+            <label
+              style="font-size: 20px; color: black; position: absolute; top: 340px; left: 40px;"
+            >Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              style="position: absolute; width: 160px; top: 340px; left: 140px; border: none; border-bottom: 1px solid black; background-color: transparent ; color: black;"
+            />
+
+            <label
+              style="font-size: 20px; color: black; position: absolute; top: 340px; left: 330px;"
+            >Confirm Password:</label>
+            <input
+              type="password"
+              name="confirmpassword"
+              id="confirmpassword"
+              required
+              style="position: absolute; width: 160px; top: 340px; left: 505px; border: none; border-bottom: 1px solid black; background-color: transparent ; color: black;"
+            />
+
+            <button
+              type="submit"
+              class="registeration"
+              style="font-size: 25px; padding-bottom: 4px; width: 200px; position: absolute; top: 410px; left: 250px; background-color: black; color: white; border: none; border-radius: 10px;"
+            >Register</button>
+
+            <p
+              style="font-size: 15px; color: black; position: absolute; top: 470px; left: 280px;"
+            >By creating an account you agree to our
+              <a href="#">Terms & Privacy</a>.</p>
+
+          </div>
+        </form>
+      </div>
+    </section>
+    {{!-- <form action="/register" method="post">
+      <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr />
+        <label for="firstname"><b>First Name</b></label>
+        <input
+          type="text"
+          placeholder="firstname"
+          name="firstname"
+          id="firstname"
+          required
+        />
+        <label for="lastname"><b>Last Name</b></label>
+        <input
+          type="text"
+          placeholder="lastname"
+          name="lastname"
+          id="lastname"
+          required
+        />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+        <label>
+          Phone :
+        </label>
+        {{! <input type="text" name="country code" value="+91" size="2" /> }}
+        <input type="text" name="phone" id="phone" />
+        <br />
+        <br />
+        <label for="age">age</label>
+        <input type="number" name="age" id="age" />
+        <label>
+          Gender :
+        </label><br />
+        <input type="radio" name="gender" value="male" />
+        Male
+        <br />
+        <input type="radio" name="gender" value="female" />
+        Female
+        <br />
+        <input type="radio" name="gender" value="other" />
+        Other
+        <br /><br />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          id="password"
+          required
+        />
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="confirmpassword"
+          id="confirmpassword"
+          required
+        />
+        <hr />
+
+        <p>By creating an account you agree to our
+          <a href="#">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+
+      <div class="container signin">
+        <p>Already have an account? <a href="#">Sign in</a>.</p>
+      </div>
+    </form> --}}
+  </body>
+</html>

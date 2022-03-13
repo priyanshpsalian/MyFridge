@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+
+.main_menu {
+  background-color: #b1a28f;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar {
+  background-color: #b1a28f;
+  z-index: 10;
+}
+
+#container {
+  position: relative;
+  top: 75px;
+  /* margin: 100px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+  column-gap: 80px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  background-image: url(../photos/recombg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

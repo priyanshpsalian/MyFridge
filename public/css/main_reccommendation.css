@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  background-image: url("../photos/bg-4.jpg");
+  background-size: cover;
+}
+.navbar {
+  position: relative;
+  background-color: gray;
+  z-index: 10;
+}
+
+.button1 {
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 400px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-weight: bolder;
+  color: rgb(112, 93, 97);
+  box-shadow: darkorange;
+
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: content-box;
+  background-color: burlywood;
+  border-style: thick;
+  border-width: 2vh;
+}
+.heading {
+  margin-top: 50px;
+  color: blanchedalmond;
+  margin-right: 50px;
+}

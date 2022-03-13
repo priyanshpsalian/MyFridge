@@ -1,0 +1,219 @@
+/* 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../photos/bg3.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  font-weight: bolder;
+  padding: 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px;
+}
+.nav span {
+  margin-left: 20px;
+}
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.who-we-are {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.who-we-are span {
+  width: 60%;
+  align-items: center;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.card-img {
+  border-radius: 5px;
+}
+.cards .card {
+  width: 16rem;
+  margin: 20px;
+}
+.card p {
+  font-size: 14px;
+}
+.social-media {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-media i {
+  margin: 10px;
+}
+.active {
+  border-bottom: 1px solid #fff;
+}
+.card-img1 {
+  width: 100%;
+  height: 12rem;
+  background-image: url("../photos/01.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.card-img2 {
+  width: 100%;
+  height: 12rem;
+  background-image: url("../photos/02.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.card-img3 {
+  width: 100%;
+  height: 12rem;
+  background-image: url("../photos/03.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.card-img4 {
+  width: 100%;
+  height: 12rem;
+  background-image: url("../photos/04.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main_menu {
+  background-color: #b1a28f;
+  position: relative;
+  z-index: 10;
+  opacity: 0.9;
+}
+
+/* .navbar {
+  position: relative;
+  background-color: #b1a28f;
+  z-index: 10;
+} */
+
+/* .showcase {
+  width: 100vw;
+  height: 100vh;
+} */
+
+.bg {
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  width: 400px;
+  height: 500px;
+  border-radius: 2px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  opacity: 0.75;
+  background-image: url("../photos/bg-5.jpg");
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.who-we-are {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.who-we-are span {
+  width: 60%;
+  align-items: center;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.card-img {
+  border-radius: 5px;
+}
+.cards .card {
+  width: 16rem;
+  margin: 20px;
+}
+.card p {
+  font-size: 14px;
+}
+.social-media {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-media i {
+  margin: 10px;
+}
+.active {
+  border-bottom: 1px solid #fff;
+}
+.card-img1 {
+  width: 100%;
+  height: 12rem;
+  background-image: url("../photos/01.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.card-img2 {
+  width: 100%;
+  height: 12rem;
+  background-image: url("../photos/02.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.card-img3 {
+  width: 100%;
+  height: 12rem;
+  background-image: url("../photos/03.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.card-img4 {
+  width: 100%;
+  height: 12rem;
+  background-image: url("../photos/04.jpg");
+  background-size: cover;
+  background-position: center center;
+}

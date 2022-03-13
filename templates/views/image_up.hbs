@@ -1,0 +1,165 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/image_up.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    {{! <link type="text/css" rel="stylesheet" href="css/style_add_items.css" /> }}
+    {{! <link type="text/css" rel="stylesheet" href="css/style_add_items.css" />
+     <link type="text/css" rel="stylesheet" href="css/home.css" /> }}
+    {{! <link type="text/css" rel="stylesheet" href="css/home.css" /> }}
+    {{! <script type="text/javascript" src="/script/add_items.js" async></script> }}
+  </head>
+
+  <body
+    style="background-image: url(../photos/recipebg4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;"
+  >
+    <div class="container-fluid main_menu">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <nav
+            class="navbar navbar-expand-lg"
+            style="background-color: #b1a28f;"
+          >
+            <img
+              src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-smart-refrigerator-internet-technology-vitaliy-gorbachev-fill-vitaly-gorbachev.png"
+            />
+            <header
+              style="font-family: serif; font-size: 35px; color: #5a004b;"
+            >
+              My
+            </header>
+            <header style="font-family: serif; font-size: 35px; color: black;">
+              Fridge
+            </header>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">
+                    <header
+                      style="font-size: 23px; color: black; border-bottom: 1px solid black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Home
+                    </header>
+                    <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/edit_items">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Edit Items
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/expired_items">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Expiring Items
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/main_reccommendation">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Recipe Recommendation
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/amazon_try">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Buy Products
+                    </header>
+                  </a>
+                </li>
+                {{! <li class="nav-item">
+              <a class="nav-link" href="/about_us.html">
+                <header
+                  style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                >
+                  Recipes
+                </header>
+              </a>
+            </li> }}
+                <li class="nav-item">
+                  <a class="nav-link" href="/about_us">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      About Us
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/logout">
+                    <header
+                      style="font-size: 23px; color: black; padding-left: 5px;"
+                    >
+                      Logout
+                    </header>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <form
+      style="margin-left:50vh; "
+      action="/temp"
+      enctype="multipart/form-data"
+      method="post"
+    >
+      <input
+        style="position: absolute;
+    left: 560px;"
+        type="file"
+        id="image_input1"
+        name="image_input"
+      />
+      <button
+        type="submit"
+        style="position: absolute;top:200px;
+    left: 560px; font-size: 25px;  width: 250px; background-color: black; color: white; border: none; border-radius: 10px;"
+      >Upload</button>
+    </form>
+    {{! <div class="formbox">
+    <form action="/temp" enctype="multipart/form-data" method="post" >
+     <input type="file" style="margin-top: 50px;">
+     <button type="submit">Upload</button>
+    </form>
+  </div> }}
+    {{! <div id="display_image"></div> }}
+  </body>
+  <script type="text/javascript" src="/script/image_up.js"></script>
+</html>

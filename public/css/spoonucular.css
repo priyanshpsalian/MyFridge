@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+
+/* Nav Bar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_menu {
+  background-color: #b1a28f;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar {
+  background-color: #b1a28f;
+  z-index: 10;
+}
+
+.showcase video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Carousel video */
+
+/*.carousel-item {
+    height: 100vh;
+    overflow: hidden;
+  }*/
+
+/* Search Bar */
+
+.input-group {
+  margin-top: 750px;
+}
+
+#button-addon2 {
+  margin-right: 350px;
+}
+
+#button-addon2:hover {
+  font-weight: bold;
+  font-size: large;
+  border-color: white;
+  transform: scale(1.09);
+  background-color: #bab86c;
+}
+
+.form-control {
+  margin-left: 350px;
+}
+
+.form-control:focus {
+  border-color: #bab86c;
+  box-shadow: inset 0 1px 1px #f9fafa, 0 0 8px #bab86c;
+}
+
+/* Recipe Card */
+
+#container {
+  /* margin: 100px; */
+  font-family: cursive;
+  position: relative;
+  top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+  column-gap: 80px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  background-image: url(images/recipebg4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* 
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+.main {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search {
+  width: 50%;
+  position: relative;
+}
+.search input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  padding-right: 60px;
+  border: 2px solid white;
+  outline: none;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+.fa-search {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: #fff;
+  font-size: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.card-title {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+#likesOut {
+  margin-left: 21px;
+}
+
+/* .missItemCount span{
+  font-weight: bold;
+} */
+.only {
+  font-family: revert;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+  .main .search {
+    width: 90%;
+  }
+}

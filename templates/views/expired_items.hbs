@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link type="text/css" rel="stylesheet" href="css/expired_items.css" />
+      <link type="text/css" rel="stylesheet" href="css/home.css" />
+      <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    {{! <style>
+      .h1 { color: red; }
+    </style> }}
+    <title>Document</title>
+  </head>
+
+  <body>
+    {{>navbar}}
+    <div class="bg">
+      <section class="container content-section">
+        <h2 class="section-header" style="margin-bottom: 40px;">Items in your
+          fridge</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-date cart-header cart-column">EX DATE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+          {{#each da}}
+            <div class="cart-row">
+
+              <div class="cart-item cart-column">
+
+                <span class="cart-item-title">{{item_name}}</span>
+              </div>
+              <span class="cart-price cart-column">{{item_price}}</span>
+              <span class="cart-date cart-column">{{item_expiry_date}}</span>
+              <div class="cart-quantity cart-column">
+                <span
+                  class="cart-quantity-input"
+                  type="number"
+                >{{item_quantity}}</span>
+                {{! <button class="btn btn-danger" type="button">REMOVE</button> }}
+              </div>
+
+            </div>
+          {{/each}}
+          {{!-- {{#each da.[0]}} --}}
+          {{!-- <p>{{item_name}}</p>
+      <p>{{item_price}}</p> --}}
+          {{!-- <p>{{phone}}</p> --}}
+          {{!-- {{#each this.email}}
+      <p>{{this}}</p>--}}
+          {{!-- {{/each}} --}}
+        </div>
+        {{! <div class="cart-total">
+      <strong class="cart-total-title">Total</strong>
+      <span class="cart-total-price">$0</span>
+    </div> }}
+        {{! <input name="to" type="array">hh
+    <input id="array" name="array"></input> }}
+        <button class="btn btn-primary btn-purchase" type="submit"><a href="/amazon_recommendation">Buy Products</a>Buy Products</button>
+        <button class="btn btn-primary btn-purchase" type="submit"><a href="/edit_items">Edit Items</a>Edit Items</button>
+      </section>
+    </div>
+    {{!-- <p id="pp">{{da.item_expiry_date}}</p> --}}
+    {{!-- <section class="container content-section">
+      <h2 class="section-header">Items in your fridge</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-date cart-header cart-column">EX DATE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+        {{#each da}}
+          <div class="cart-row">
+
+            <div class="cart-item cart-column">
+
+              <span class="cart-item-title">{{item_name}}</span>
+            </div>
+            <span class="cart-price cart-column">{{item_price}}</span>
+            <span class="cart-date cart-column">{{item_expiry_date}}</span>
+            <div class="cart-quantity cart-column">
+              <span
+                class="cart-quantity-input"
+                type="number"
+              >{{item_quantity}}</span>
+              {{! <button class="btn btn-danger" type="button">REMOVE</button> }}
+            </div>
+
+          </div>
+        {{/each}} --}}
+        {{!-- {{#each da.[0]}} --}}
+        {{!-- <p>{{item_name}}</p>
+        <p>{{item_price}}</p> --}}
+        {{!-- <p>{{phone}}</p> --}}
+        {{!-- {{#each this.email}}
+        <p>{{this}}</p>--}}
+        {{!-- {{/each}} --}}
+      </div>
+      {{! <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span  class="cart-total-price">$0</span>
+        </div> }}
+      {{! <input name="to" type="array" >hh
+        <input id="array" name="array"></input> }}
+      <button class="btn btn-primary btn-purchase" type="submit">Buy Products</button>
+      <button class="btn btn-primary btn-purchase" type="submit">Edit Items</button>
+    </section>
+
+  </body>
+  <script type="text/javascript" src="/script/expired_items.js"></script>
+</html>

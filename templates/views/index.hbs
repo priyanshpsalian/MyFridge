@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="css/style_homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    {{! <link type="text/css" rel="stylesheet" href="css/style.css" /> }}
+    {{! <style>
+      .h1 { color: red; }
+    </style> }}
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <div class="container-fluid main_menu">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <nav class="navbar navbar-expand-lg">
+            <img
+              src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-smart-refrigerator-internet-technology-vitaliy-gorbachev-fill-vitaly-gorbachev.png"
+            />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">
+                    <header
+                      style="font-size: 23px; color: black; border-bottom: 1px solid black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Home
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Login
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Sign-Up
+                    </header>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="showcase">
+      <video src="videos/bg2.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="title1">
+        My
+      </div>
+      <div class="title2">
+        Fridge
+      </div>
+
+      <div class="text1">
+        <p>Keep track of all food items in your fridge.</p>
+      </div>
+
+    </section>
+    {{!-- <p id="pp">{{da}}</p>--}}
+    {{! <h1 class="h1">hi</h1>
+    <a href="/login">login</a>
+    <a href="/logout">logout</a>
+    <a href="/register">register</a>
+    <a href="/edit_items">edit_items</a>  }}
+    {{!-- {{>navbar}} --}}
+    {{! <p class="hi">hbs</p> }}
+
+  </body>
+  <script type="text/javascript" src="/script/script.js"></script>
+</html>

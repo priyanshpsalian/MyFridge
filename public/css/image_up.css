@@ -1,0 +1,41 @@
+/* #display_image {
+  width: 400px;
+  height: 225px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+} */
+body {
+  background-image: url("../photos/bg-3.jpg");
+  background-size: cover;
+}
+button {
+  text-align: center;
+  font-size: 25px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+.navbar {
+  position: relative;
+  background-color: gray;
+  z-index: 10;
+}
+
+form {
+  background-color: white;
+  margin-top: 50px;
+}
+.formbox {
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+  border: 15px thin black;
+
+  margin-left: 550px;
+  margin-top: 250px;
+  text-align: center;
+}

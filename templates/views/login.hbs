@@ -1,0 +1,160 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>MyFridge</title>
+
+  </head>
+  <body>
+    <div class="container-fluid main_menu">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <nav class="navbar navbar-expand-lg">
+            <img
+              src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-smart-refrigerator-internet-technology-vitaliy-gorbachev-fill-vitaly-gorbachev.png"
+            />
+            <header
+              style="font-size: 35px; color: #5a004b; font-family: serif;"
+            >
+              My
+            </header>
+            <header style="font-size: 35px; color: black; font-family: serif;">
+              Fridge
+            </header>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/index">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Home
+                    </header>
+                    <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">
+                    <header
+                      style="font-size: 23px; color: black; border-bottom: 1px solid black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Login
+                    </header>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register">
+                    <header
+                      style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
+                    >
+                      Sign-Up
+                    </header>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <form action="/login" method="post">
+      <section class="showcase">
+        <img src="photos/loginbg1.jpg" width="100%" />
+        <div class="bg"></div>
+        <div class="form">
+          <label
+            style="position:absolute; color : black; font-family: 'Tangerine', serif; font-size: 60px; top: 5px; left: 145px;"
+          >Login</label>
+
+          <i
+            class="fas fa-user-circle fa-3x"
+            style="position: absolute; top: 135px; left: 30px;"
+          ></i>
+          <input
+            type="text"
+            placeholder="Username"
+            name="uname"
+            required
+            style="position: absolute; font-size: 20px; width: 260px; height: 40px; top: 140px; left: 90px; border: none; border-bottom: 1px solid black; background-color: transparent; color: black;"
+          />
+
+          <i
+            class="fas fa-lock fa-3x"
+            style="position: absolute; top: 240px; left: 30px;"
+          ></i>
+          <input
+            type="password"
+            placeholder="Password"
+            name="psw"
+            required
+            style="position: absolute; font-size: 20px; width: 260px; height: 40px; top: 245px; left: 90px; border: none; border-bottom: 1px solid black; background-color: transparent; color: black;"
+          />
+
+          <button
+            type="submit"
+            style="font-size: 25px; padding-bottom: 4px; width: 250px; position: absolute; top: 355px; left: 75px; background-color: black; color: white; border: none; border-radius: 10px;"
+          >Login</button>
+
+          <span class="psw"><a
+              href="#"
+              style="position: absolute; font-size: 15px; top: 450px; left: 20px;"
+            >Forgot Password?</a></span>
+        </div>
+      </section>
+    </form>
+    {{! <form action="/login" method="post">
+      <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Login</button>
+
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form> }}
+  </body>
+</html>

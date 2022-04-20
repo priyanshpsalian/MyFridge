@@ -52,7 +52,7 @@ employeescheema.methods.generateAuthToken = async function () {
   try {
     const token = jwt.sign({ _id: this._id }, "mmmmmmmmmmmmmmmmmmmmmmm");
     console.log(token);
-    this.tokens = this.tokens.concat({ token: token });
+    // this.tokens = this.tokens.concat({ token: token });
     await this.save();
     return token;
   } catch (error) {

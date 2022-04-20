@@ -2,184 +2,163 @@
 <html>
 
 <head>
-    <title>The Generics | Store</title>
-    <meta name="description" content="This is the description">
-        
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="css/style_add_items.css" />
-    {{!-- <link type="text/css" rel="stylesheet" href="css/style_add_items.css" />
-     <link type="text/css" rel="stylesheet" href="css/home.css" /> --}}
-     {{!-- <link type="text/css" rel="stylesheet" href="css/home.css" /> --}}
-    <script type="text/javascript" src="/script/add_items.js" async></script>
+  <title>The Generics | Store</title>
+  <meta name="description" content="This is the description">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="css/style_add_items.css" />
+  {{!--
+  <link type="text/css" rel="stylesheet" href="css/style_add_items.css" />
+  <link type="text/css" rel="stylesheet" href="css/home.css" /> --}}
+  {{!--
+  <link type="text/css" rel="stylesheet" href="css/home.css" /> --}}
+  <script type="text/javascript" src="/script/add_items.js" async></script>
 </head>
 
 <body>
-    <div class="container-fluid main_menu">
-  <div class="row">
-    <div class="col-12 mx-auto">
-      <nav class="navbar navbar-expand-lg">
-        <img
-          src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-smart-refrigerator-internet-technology-vitaliy-gorbachev-fill-vitaly-gorbachev.png"
-        />
-        <header style="font-family: serif; font-size: 35px; color: #5a004b;">
-          My
-        </header>
-        <header style="font-family: serif; font-size: 35px; color: black;">
-          Fridge
-        </header>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <div class="container-fluid main_menu">
+    <div class="row">
+      <div class="col-12 mx-auto">
+        <nav class="navbar navbar-expand-lg">
+          <img
+            src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-smart-refrigerator-internet-technology-vitaliy-gorbachev-fill-vitaly-gorbachev.png" />
+          <header style="font-family: serif; font-size: 35px; color: #5a004b;">
+            My
+          </header>
+          <header style="font-family: serif; font-size: 35px; color: black;">
+            Fridge
+          </header>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">
-                <header
-                  style="font-size: 23px; color: black; border-bottom: 1px solid black; padding-right: 5px; padding-left: 5px;"
-                >
-                  Home
-                </header>
-                <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/edit_items">
-                <header
-                  style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
-                >
-                  Edit Items
-                </header>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/expired_items">
-                <header
-                  style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
-                >
-                  Expiring Items
-                </header>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/main_reccommendation">
-                <header
-                  style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
-                >
-                  Recipe Recommendation
-                </header>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/amazon_recommendation">
-                <header
-                  style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
-                >
-                  Buy Products
-                </header>
-              </a>
-            </li>
-            {{! <li class="nav-item">
-              <a class="nav-link" href="/about_us.html">
-                <header
-                  style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
-                >
-                  Recipes
-                </header>
-              </a>
-            </li> }}
-            <li class="nav-item">
-              <a class="nav-link" href="/about_us">
-                <header
-                  style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;"
-                >
-                  About Us
-                </header>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/logout">
-                <header
-                  style="font-size: 23px; color: black; padding-left: 5px;"
-                >
-                  Logout
-                </header>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">
+                  <header
+                    style="font-size: 23px; color: black; border-bottom: 1px solid black; padding-right: 5px; padding-left: 5px;">
+                    Home
+                  </header>
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/edit_items">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    Edit Items
+                  </header>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/expired_items">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    Expiring Items
+                  </header>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/main_reccommendation">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    Recipe Recommendation
+                  </header>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/amazon_recommendation">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    Buy Products
+                  </header>
+                </a>
+              </li>
+              {{! <li class="nav-item">
+                <a class="nav-link" href="/about_us.html">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    Recipes
+                  </header>
+                </a>
+              </li> }}
+              <li class="nav-item">
+                <a class="nav-link" href="/about_us">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    About Us
+                  </header>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">
+                  <header style="font-size: 23px; color: black; padding-left: 5px;">
+                    Logout
+                  </header>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </div>
-</div>
-   {{!-- <div class="container-fluid main_menu" id="navbar">
-        <div class="row">
-          <div class="col-12 mx-auto">
-            <nav class="navbar navbar-expand-lg">
-              <img
-                src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-smart-refrigerator-internet-technology-vitaliy-gorbachev-fill-vitaly-gorbachev.png" />
-              <header style="font-family: serif; font-size: 35px; color: #5a004b;">
-                My
-              </header>
-              <header style="font-family: serif; font-size: 35px; color: black;">
-                Fridge
-              </header>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-    
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/">
-                      <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
-                        Home
-                      </header>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/add.html">
-                      <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
-                        Add Items
-                      </header>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/expired.html">
-                      <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
-                        Expired Items
-                      </header>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/recipes.html">
-                      <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
-                        Recipes
-                      </header>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/about_us.html">
-                      <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
-                        About Us
-                      </header>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+  {{!-- <div class="container-fluid main_menu" id="navbar">
+    <div class="row">
+      <div class="col-12 mx-auto">
+        <nav class="navbar navbar-expand-lg">
+          <img
+            src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-smart-refrigerator-internet-technology-vitaliy-gorbachev-fill-vitaly-gorbachev.png" />
+          <header style="font-family: serif; font-size: 35px; color: #5a004b;">
+            My
+          </header>
+          <header style="font-family: serif; font-size: 35px; color: black;">
+            Fridge
+          </header>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    Home
+                  </header>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/add.html">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    Add Items
+                  </header>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/expired.html">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    Expired Items
+                  </header>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/recipes.html">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    Recipes
+                  </header>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about_us.html">
+                  <header style="font-size: 23px; color: black; padding-right: 5px; padding-left: 5px;">
+                    About Us
+                  </header>
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div> --}}
-      
+        </nav>
+      </div>
+    </div>
+  </div> --}}
 
 
 
@@ -227,7 +206,8 @@
 
 
 
-   <!-- <header class="main-header">
+
+  <!-- <header class="main-header">
         <nav class="main-nav nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -237,36 +217,37 @@
         </nav>
         <h1 class="band-name band-name-large">The Generics</h1>
     </header> -->
-    <div class="bg">
-    <div  class="container">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-   
-    <section  style="background-color: transparent; border: none; border-bottom: 1px solid black;" class="container content-section">
+  <div class="bg">
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <section style="background-color: transparent; border: none; border-bottom: 1px solid black;"
+        class="container content-section">
         <h2 class="section-header">ADD ITEMS</h2>
         <div class="shop-items">
-            <div class="shop-item">
-              <h4>ITEM</h4>
-                <input class="shop-item-title" value={{ba}}></input>
-                <!-- <img class="shop-item-image" src="Images/Album 1.png"> -->
-                <div class="shop-item-details">
-                  <h5 style="margin-right: 10px;">PRICE</h5>
-                  <br>
-                    <input class="shop-item-price"></input>
-                    <h5 style="margin-left: 10px;margin-right:10px;">Expiry Date</h5>
-                    <input type="date" value="2022-01-26" class="shop-item-date" style="margin-right: 10px;"></input>
-                    <br>
+          <div class="shop-item">
+            <h4>ITEM</h4>
+            <input class="shop-item-title" value={{ba}}></input>
+            <!-- <img class="shop-item-image" src="Images/Album 1.png"> -->
+            <div class="shop-item-details">
+              <h5 style="margin-right: 10px;">PRICE</h5>
+              <br>
+              <input class="shop-item-price"></input>
+              <h5 style="margin-left: 10px;margin-right:10px;">Expiry Date</h5>
+              <input type="date" value="2022-01-26" class="shop-item-date" style="margin-right: 10px;"></input>
+              <br>
 
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-                <br>
-                <h3 class="heading"> <a style="color:#f50404;margin-left:250px;" href="/image_up">SCAN IMAGE</a></h3>
+              <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
             </div>
-            <!-- <div class="shop-item">
+            <br>
+            <h3 class="heading"> <a style="color:#f50404;margin-left:250px;" href="/image_up">SCAN IMAGE</a></h3>
+          </div>
+          <!-- <div class="shop-item">
         <span class="shop-item-title">Album 2</span>
         <img class="shop-item-image" src="Images/Album 2.png">
         <div class="shop-item-details">
@@ -292,7 +273,7 @@
     </div>
     </div>
     </section>  -->
-            <!-- <section class="container content-section">
+          <!-- <section class="container content-section">
         <h2 class="section-header">MERCH</h2>
         <div class="shop-items">
             <div class="shop-item">
@@ -302,7 +283,8 @@
                     <span class="shop-item-price">$19.99</span>
                     <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div> -->
-        {{!-- </div> --}}
+          {{!--
+        </div> --}}
         <!-- <div class="shop-item">
             <span class="shop-item-title">Coffee Cup</span>
             <img class="shop-item-image" src="Images/Cofee.png">
@@ -311,54 +293,54 @@
                 <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
             </div>
         </div> -->
-        </div>
+    </div>
     </section>
     <form action="/edit_items" method="post">
-        <section  class="container content-section">
-            <h2 class="section-header">Items in your fridge</h2>
-            <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-date cart-header cart-column">EX DATE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      <section class="container content-section">
+        <h2 class="section-header">Items in your fridge</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-date cart-header cart-column">EX DATE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+          {{#each da.[0]}}
+          <div class="cart-row">
+
+            <div class="cart-item cart-column">
+
+              <span class="cart-item-title">{{item_name}}</span>
             </div>
-            <div class="cart-items">
-                {{#each da.[0]}}
-                <div class="cart-row">
-
-                    <div class="cart-item cart-column">
-
-                        <span class="cart-item-title">{{item_name}}</span>
-                    </div>
-                    <span class="cart-price cart-column">{{item_price}}</span>
-                    <span class="cart-date cart-column">{{item_expiry_date}}</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value={{item_quantity}}>
-                        <button class="btn btn-danger" type="button">REMOVE</button>
-                    </div>
-
-                </div>
-                {{/each}}
-                {{!-- {{#each da.[0]}} --}}
-                {{!-- <p>{{item_name}}</p>
-                <p>{{item_price}}</p> --}}
-                {{!-- <p>{{phone}}</p> --}}
-                {{!-- {{#each this.email}}
-                <p>{{this}}</p>--}}
-                {{!-- {{/each}} --}}
+            <span class="cart-price cart-column">{{item_price}}</span>
+            <span class="cart-date cart-column">{{item_expiry_date}}</span>
+            <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value={{item_quantity}}>
+              <button class="btn btn-danger" type="button">REMOVE</button>
             </div>
-            {{!-- <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">$0</span>
-            </div> --}}
-            {{!-- <input name="to" type="array">hh
-            <input id="array" name="array"></input> --}}
-            <button class="btn btn-primary btn-purchase" type="submit">DONE</button>
-        </section>
-        
+
+          </div>
+          {{/each}}
+          {{!-- {{#each da.[0]}} --}}
+          {{!-- <p>{{item_name}}</p>
+          <p>{{item_price}}</p> --}}
+          {{!-- <p>{{phone}}</p> --}}
+          {{!-- {{#each this.email}}
+          <p>{{this}}</p>--}}
+          {{!-- {{/each}} --}}
+        </div>
+        {{!-- <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div> --}}
+        {{!-- <input name="to" type="array">hh
+        <input id="array" name="array"></input> --}}
+        <button class="btn btn-primary btn-purchase" type="submit">DONE</button>
+      </section>
+
     </form>
-    </div>
-    <!-- <footer class="main-footer">
+  </div>
+  <!-- <footer class="main-footer">
         <div class="container main-footer-container">
             <h3 class="band-name">The Generics</h3>
             <ul class="nav footer-nav">
@@ -380,8 +362,8 @@
             </ul>
         </div>
     </footer> -->
-        
-    <!-- <header class="main-header">
+
+  <!-- <header class="main-header">
         <nav class="main-nav nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -391,82 +373,90 @@
         </nav>
         <h1 class="band-name band-name-large">The Generics</h1>
     </header> -->
-    {{!-- <section class="container content-section">
-        <h2 class="section-header">ADD ITEMS</h2>
-        <div class="shop-items">
-            <div class="shop-item">
-                <input  class="shop-item-title" value="{{ba}}">ITEM</input>
-                <!-- <img class="shop-item-image" src="Images/Album 1.png"> -->
-                <div class="shop-item-details">
-                    <input class="shop-item-price">price</input>
-                    <input type="date" value="2022-01-14" class="shop-item-date">ex date</input>
+  {{!-- <section class="container content-section">
+    <h2 class="section-header">ADD ITEMS</h2>
+    <div class="shop-items">
+      <div class="shop-item">
+        <input class="shop-item-title" value="{{ba}}">ITEM</input>
+        <!-- <img class="shop-item-image" src="Images/Album 1.png"> -->
+        <div class="shop-item-details">
+          <input class="shop-item-price">price</input>
+          <input type="date" value="2022-01-14" class="shop-item-date">ex date</input>
 
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div> --}}
-            {{!-- <div class="bg">
-    <section class="container content-section">
-        <h2 class="section-header">ADD ITEMS</h2>
-        <div class="shop-items">
+          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </div>
+      </div> --}}
+      {{!-- <div class="bg">
+        <section class="container content-section">
+          <h2 class="section-header">ADD ITEMS</h2>
+          <div class="shop-items">
             <div class="shop-item">
-                <label style="font-size: 20px; margin-right: 4px; color: black;">ITEM:</label>
-                <input class="shop-item-title" style="background-color: transparent; border: none; border-bottom: 1px solid black;"></input>
-                <!-- <img class="shop-item-image" src="Images/Album 1.png"> -->
-                <div class="shop-item-details">
-                    <label style="position: relative; top: 4px; font-size: 18px; margin-right: 6px; left: 40px; color: black;">Price:</label>
-                    <input class="shop-item-price" style="position: relative; left: 40px; background-color: transparent; border: none; border-bottom: 1px solid black;"></input>
-                    <label style="position: relative; top: 4px; left: 90px; font-size: 18px; margin-right: 6px; color: black;">Expiry Date:</label>
-                    <input type="date" value="2022-01-14" class="shop-item-date" style="position: relative; left: 90px; background-color: transparent; border: 1px solid black; color: black;"></input> 
+              <label style="font-size: 20px; margin-right: 4px; color: black;">ITEM:</label>
+              <input class="shop-item-title"
+                style="background-color: transparent; border: none; border-bottom: 1px solid black;"></input>
+              <!-- <img class="shop-item-image" src="Images/Album 1.png"> -->
+              <div class="shop-item-details">
+                <label
+                  style="position: relative; top: 4px; font-size: 18px; margin-right: 6px; left: 40px; color: black;">Price:</label>
+                <input class="shop-item-price"
+                  style="position: relative; left: 40px; background-color: transparent; border: none; border-bottom: 1px solid black;"></input>
+                <label
+                  style="position: relative; top: 4px; left: 90px; font-size: 18px; margin-right: 6px; color: black;">Expiry
+                  Date:</label>
+                <input type="date" value="2022-01-14" class="shop-item-date"
+                  style="position: relative; left: 90px; background-color: transparent; border: 1px solid black; color: black;"></input>
 
-                    <button class="btn btn-primary shop-item-button" type="button" style="position: relative; top: 70px; right: 230px;">ADD TO CART</button>
-                </div>
+                <button class="btn btn-primary shop-item-button" type="button"
+                  style="position: relative; top: 70px; right: 230px;">ADD TO CART</button>
+              </div>
             </div>
-            </section> --}}
-     <!--form action="/edit_items" method="post"--> 
+        </section> --}}
+        <!--form action="/edit_items" method="post"-->
         {{!-- <section class="container content-section" style="position: relative; top: 250px; padding-bottom: 5px;">
-            <h2 class="section-header" style="margin-bottom: 20px;">Items in your fridge</h2>
+          <h2 class="section-header" style="margin-bottom: 20px;">Items in your fridge</h2>
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-date cart-header cart-column">EX DATE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items">
+            {{#each da.[0]}}
             <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-date cart-header cart-column">EX DATE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+
+              <div class="cart-item cart-column">
+
+                <span class="cart-item-title">{{item_name}}</span>
+              </div>
+              <span class="cart-price cart-column">{{item_price}}</span>
+              <span class="cart-date cart-column">{{item_expiry_date}}</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value={{item_quantity}}>
+                <button class="btn btn-danger" type="button">REMOVE</button>
+              </div>
+
             </div>
-            <div class="cart-items">
-                {{#each da.[0]}}
-                <div class="cart-row">
-
-                    <div class="cart-item cart-column">
-
-                        <span class="cart-item-title">{{item_name}}</span>
-                    </div>
-                    <span class="cart-price cart-column">{{item_price}}</span>
-                    <span class="cart-date cart-column">{{item_expiry_date}}</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value={{item_quantity}}>
-                        <button class="btn btn-danger" type="button">REMOVE</button>
-                    </div>
-
-                </div>
-                {{/each}}
-                {{!-- {{#each da.[0]}} --}}
-                {{!-- <p>{{item_name}}</p>
-                <p>{{item_price}}</p> --}}
-                {{!-- <p>{{phone}}</p> --}}
-                {{!-- {{#each this.email}}
-                <p>{{this}}</p>--}}
-                {{!-- {{/each}} --}}
-            {{!-- </div> --}}
-            {{!-- <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">$0</span>
-            </div> --}}
-            {{!-- <input name="to" type="array">hh
-            <input id="array" name="array"></input> --}}
-            {{!-- <button class="btn btn-primary btn-purchase" type="submit">DONE</button>
+            {{/each}}
+            {{!-- {{#each da.[0]}} --}}
+            {{!-- <p>{{item_name}}</p>
+            <p>{{item_price}}</p> --}}
+            {{!-- <p>{{phone}}</p> --}}
+            {{!-- {{#each this.email}}
+            <p>{{this}}</p>--}}
+            {{!-- {{/each}} --}}
+            {{!--
+          </div> --}}
+          {{!-- <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+          </div> --}}
+          {{!-- <input name="to" type="array">hh
+          <input id="array" name="array"></input> --}}
+          {{!-- <button class="btn btn-primary btn-purchase" type="submit">DONE</button>
         </section>
-        
-    </form> --}}
-            <!-- <div class="shop-item">
+
+        </form> --}}
+        <!-- <div class="shop-item">
         <span class="shop-item-title">Album 2</span>
         <img class="shop-item-image" src="Images/Album 2.png">
         <div class="shop-item-details">
@@ -492,7 +482,7 @@
     </div>
     </div>
     </section>  -->
-            <!-- <section class="container content-section">
+        <!-- <section class="container content-section">
         <h2 class="section-header">MERCH</h2>
         <div class="shop-items">
             <div class="shop-item">
@@ -502,8 +492,9 @@
                     <span class="shop-item-price">$19.99</span>
                     <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div> -->
-        {{!-- </div> --}}
-        <!-- <div class="shop-item">
+        {{!--
+      </div> --}}
+      <!-- <div class="shop-item">
             <span class="shop-item-title">Coffee Cup</span>
             <img class="shop-item-image" src="Images/Cofee.png">
             <div class="shop-item-details">
@@ -511,52 +502,55 @@
                 <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
             </div>
         </div> -->
-        {{!-- </div>
-    </section>
-    {{!-- <form action="/edit_items" method="post"> --}}
+      {{!--
+    </div>
+  </section>
+  {{!-- <form action="/edit_items" method="post"> --}}
     <section class="container content-section">
-        <h2 class="section-header">Items in your fridge</h2>
+      <h2 class="section-header">Items in your fridge</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-date cart-header cart-column">EX DATE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+        {{#each da.[0]}}
         <div class="cart-row">
-            <span class="cart-item cart-header cart-column">ITEM</span>
-            <span class="cart-price cart-header cart-column">PRICE</span>
-            <span  class="cart-date cart-header cart-column">EX DATE</span>
-            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-        </div>
-        <div class="cart-items">
-            {{#each da.[0]}}
-            <div class="cart-row">
-            
-            <div class="cart-item cart-column">
-              
-              <span class="cart-item-title">{{item_name}}</span>
+
+          <div class="cart-item cart-column">
+
+            <span class="cart-item-title">{{item_name}}</span>
           </div>
           <span class="cart-price cart-column">{{item_price}}</span>
           <span class="cart-date cart-column">{{item_expiry_date}}</span>
           <div class="cart-quantity cart-column">
-              <input class="cart-quantity-input" type="number" value={{item_quantity}}>
-              <button class="btn btn-danger" type="button">REMOVE</button>
+            <input class="cart-quantity-input" type="number" value={{item_quantity}}>
+            <button class="btn btn-danger" type="button">REMOVE</button>
           </div>
-          
-          </div>
-          {{/each}} --}}
-            {{!-- {{#each da.[0]}} --}}
+
+        </div>
+        {{/each}} --}}
+        {{!-- {{#each da.[0]}} --}}
         {{!-- <p>{{item_name}}</p>
         <p>{{item_price}}</p> --}}
         {{!-- <p>{{phone}}</p> --}}
         {{!-- {{#each this.email}}
         <p>{{this}}</p>--}}
-    {{!-- {{/each}} --}}
-        {{!-- </div> --}}
-        {{!-- <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span  class="cart-total-price">$0</span>
-        </div> --}}
-        {{!-- <input name="to" type="array" >hh
-        <input id="array" name="array"></input> --}}
-        {{!-- <button class="btn btn-primary btn-purchase" type="submit">DONE</button>
+        {{!-- {{/each}} --}}
+        {{!--
+      </div> --}}
+      {{!-- <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div> --}}
+      {{!-- <input name="to" type="array">hh
+      <input id="array" name="array"></input> --}}
+      {{!-- <button class="btn btn-primary btn-purchase" type="submit">DONE</button>
     </section> --}}
-    {{!-- </form> --}}
-    <!-- <footer class="main-footer">
+    {{!--
+  </form> --}}
+  <!-- <footer class="main-footer">
         <div class="container main-footer-container">
             <h3 class="band-name">The Generics</h3>
             <ul class="nav footer-nav">
@@ -578,7 +572,7 @@
             </ul>
         </div>
     </footer> -->
-    </div>
+  </div>
 </body>
 
 

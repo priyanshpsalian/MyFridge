@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 require("./src/db/conn");
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 const hbs = require("hbs");
 const Register = require("./src/models/register");
 const fridge_items = require("./src/models/fridge_items");

@@ -4,6 +4,7 @@ const Register = require("../models/register");
 const auth = async (req, res, next) => {
   try {
     const token = req.cookies.jwt;
+    console.log(req.cookies);
     const verifyUser = jwt.verify(token, "mmmmmmmmmmmmmmmmmmmmmmm");
     console.log(verifyUser);
     const user = await Register.findOne({ _id: verifyUser._id });
